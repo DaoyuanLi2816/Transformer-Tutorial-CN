@@ -62,10 +62,6 @@ result = text_classifier("I love machine learning!")
 print(result)
 ```
 
-## 致谢
-
-- 感谢 Hugging Face 提供的 Transformers 库。
-
 ## 联系方式
 
-如有任何问题或反馈，请联系李道源: lidaoyuan2816@gmail.com。
+如有任何问题或反馈，请联系我: lidaoyuan2816@gmail.com。
