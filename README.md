@@ -1,7 +1,7 @@
 
 # Transformer 模型教程
 
-本仓库包含一个Jupyter Notebook，演示了如何使用Transformer模型，特别是GPT-2，进行文本分类任务，使用了Hugging Face的Transformers库。
+本仓库包含一个Jupyter Notebook，演示了如何使用Transformer模型，例如GPT-2，进行文本分类任务，使用了Hugging Face的Transformers库。
 
 ## 内容
 
