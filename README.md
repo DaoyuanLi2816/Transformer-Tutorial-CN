@@ -1,6 +1,4 @@
 
-![Intro](./238353467-897cd757-ea1f-492d-aaf9-6d1674177e08.gif)
-
 # Transformer 模型教程
 
 本仓库包含一个Jupyter Notebook，演示了如何使用Transformer模型，特别是GPT-2，进行文本分类任务，使用了Hugging Face的Transformers库。
@@ -11,6 +9,10 @@
 - 模型加载和初始设置
 - 使用GPT-2进行文本分类的示例
 - 输出结果的解释
+
+
+![Intro](./238353467-897cd757-ea1f-492d-aaf9-6d1674177e08.gif)
+
 
 ## 前提条件
 
