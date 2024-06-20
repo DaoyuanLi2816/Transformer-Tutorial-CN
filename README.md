@@ -1,7 +1,7 @@
 
-# Transformer 模型教程
+# Transformer教程
 
-本仓库包含一个Jupyter Notebook: [Transformer教程.ipynb](transformer教程.ipynb)，演示了如何使用Transformer模型，例如GPT-2，进行文本分类任务，使用了Hugging Face的Transformers库。
+Hi！这是一个transformer模型的简单的中文教程，仓库中包含一个Jupyter Notebook: [Transformer教程.ipynb](transformer教程.ipynb)，演示了如何使用Transformer模型，例如GPT-2，进行文本分类任务，使用了Hugging Face的Transformers库。
 
 ## 内容
 
@@ -44,4 +44,6 @@ print(result)
 
 ## 联系方式
 
-如有任何问题或反馈，请联系我: lidaoyuan2816@gmail.com。
+如有任何问题或反馈，请随时联系我: lidaoyuan2816@gmail.com。
+
+![Intro](./238201079-e379a33a-b428-4385-b44f-3da16e7bac9f.gif)
