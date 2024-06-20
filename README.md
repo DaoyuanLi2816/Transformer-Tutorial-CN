@@ -13,39 +13,16 @@
 
 ![Intro](./238353467-897cd757-ea1f-492d-aaf9-6d1674177e08.gif)
 
-## 前提条件
+## Requirement
 
 - Python 3.6+
 - Jupyter Notebook
 - Hugging Face Transformers 库
 
-## 安装
-
-1. 克隆仓库:
-   ```bash
-   git clone https://github.com/yourusername/transformer-tutorial.git
-   ```
-2. 进入项目目录:
-   ```bash
-   cd transformer-tutorial
-   ```
-3. 安装所需的包:
-   ```bash
-   pip install transformers jupyter
-   ```
-
-## 使用方法
-
-1. 启动Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-2. 打开 `transformer教程.ipynb` 文件。
-3. 按照笔记本中的指示，加载模型，进行文本分类，并解释结果。
 
 ## 示例
 
-以下是一个使用GPT-2分类单个句子的简单示例：
+以下是教程中一个使用GPT-2分类单个句子的示例：
 
 ```python
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TextClassificationPipeline
@@ -64,12 +41,6 @@ result = text_classifier("I love machine learning!")
 # 输出结果
 print(result)
 ```
-
-## 课程链接
-
-你可以通过以下链接直接查看和运行教程中的Jupyter Notebook文件：
-
-[Transformer教程.ipynb](transformer教程.ipynb)
 
 ## 联系方式
 
