@@ -1,5 +1,10 @@
+# Eedi - Mining Misconceptions in Mathematics Solution
 
-# Eedi - Mining Misconceptions in Mathematics Solution Report
+This solution was developed for the [Eedi - Mining Misconceptions in Mathematics](https://www.kaggle.com/c/eedi-mining-misconceptions-in-mathematics) competition on Kaggle, where participants were challenged to create models to predict the affinity between incorrect options (distractors) and potential misconceptions in mathematics multiple-choice questions. The task required building a model capable of recommending candidate misconceptions for each incorrect option to assist education experts in more efficiently and consistently labeling misconceptions.
+
+Our team achieved a [Silver Medal](https://www.kaggle.com/c/eedi-mining-misconceptions-in-mathematics), with a public score of **0.54** and a private score of **0.50**. Our solution showcased the potential for using machine learning and natural language processing models, such as Qwen2.5-32B-Instruct combined with LoRA fine-tuning, to improve the efficiency and accuracy of misconception labeling in education, contributing to advancements in educational AI. 🥈
+
+![Daoyuan Li - Eedi Mining Misconceptions](./Daoyuan%20Li%20-%20Eedi%20Mining%20Misconceptions%20in%20Mathematics.png)
 
 ## Competition Overview
 
