@@ -154,3 +154,9 @@ In the Reranker stage, using the unsloth/Qwen2.5-32B-Instruct model and fine-tun
 - **Kaggle Private Leaderboard (Private LB)**: 0.50x
 
 The Reranker model played a critical role in improving the final MAP@25 score, with leaderboard results indicating good generalization in practical testing.
+
+## Author
+
+Daoyuan Li - [Kaggle Profile](https://www.kaggle.com/distiller)
+
+For any questions, please contact Daoyuan Li at lidaoyuan2816@gmail.com.
