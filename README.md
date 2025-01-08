@@ -155,6 +155,31 @@ In the Reranker stage, using the unsloth/Qwen2.5-32B-Instruct model and fine-tun
 
 The Reranker model played a critical role in improving the final MAP@25 score, with leaderboard results indicating good generalization in practical testing.
 
+## **Solution Summary**
+
+- **Overview**: Participated in the development of a natural language processing model aimed at predicting the affinity between incorrect options (distractors) and potential misconceptions in mathematics multiple-choice questions. The project assisted education experts in efficiently labeling misconceptions, thereby improving teaching quality.
+  
+- **Responsibilities and Contributions**:
+  - **Data Preprocessing**:
+    - Utilized the `polars` library to read and transform training dataset.
+    - Converted wide-format data to long-format and integrated question text with option text to generate unified input features.
+  
+  - **Model Development**:
+    - **Retriever Stage**:
+      - Used `Qwen2.5-32B-Instruct` as the base model, fine-tuned with LoRA (Low-Rank Adaptation) to optimize model parameters for the specific task.
+      - Implemented 4-bit quantization (`BitsAndBytesConfig`) to enhance training efficiency and reduce memory usage.
+      - Trained the model using contrastive loss functions to improve the accuracy of candidate misconception retrieval.
+    - **Reranker Stage**:
+      - Leveraged the `unsloth/Qwen2.5-32B-Instruct` model for efficient inference and further optimized misconception ranking through supervised fine-tuning (SFTTrainer).
+  
+  - **Evaluation and Optimization**:
+    - Used Mean Average Precision @ 25 (MAP@25) as the primary evaluation metric, complemented by Recall@K metrics (K=1,10,25,50,100) for comprehensive performance assessment.
+    - Achieved MAP@25 of 0.4238 and Recall@50 of 89.78% in the Retriever stage. Further optimization in the Reranker stage improved leaderboard scores, demonstrating strong generalization capabilities.
+
+- **Achievements**:
+  - Successfully developed and optimized a two-stage model (Retriever + Reranker) that significantly improved the accuracy and efficiency of misconception predictions.
+  - Achieved outstanding performance on both validation and hidden test sets, earning a silver medal (Top 5%) in the competition. Achieved Public LB score of 0.54x and Private LB score of 0.50x, showcasing strong competitiveness.
+
 ## Author
 
 Daoyuan Li - [Kaggle Profile](https://www.kaggle.com/distiller)
