@@ -1,0 +1,16 @@
+
+========== 12151654 - train_reranker_v78.yaml ==========
+
+可用的 GPU 数量: 1
+polars==1.12.0
+torch==2.5.1+cu124
+transformers==4.42.4
+datasets==3.1.0
+sentence_transformers==3.2.1
+
+train instruction_token_len range: 169 ~ 533
+valid instruction_token_len range: 176 ~ 547
+
+start training...
+finish training...
+Training loss: 0.26723508124220563

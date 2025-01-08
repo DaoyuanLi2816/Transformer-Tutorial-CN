@@ -1,0 +1,48 @@
+general:
+  seed: 42
+  num_workers: 4
+  report_to: "none" # wandb tensorboard
+  debug: False
+  debug_size: 0.1
+  uptokaggle: False
+
+data:
+  oof_dir: "./output/000000_retriever"
+  peek_dataset: True
+  
+model:
+  model_name: "unsloth/Qwen2.5-32B-Instruct"
+  max_length: 640
+  
+  freeze_layers: 0
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.00
+  lora_bias: "none"
+  lora_target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+
+training:
+  amp: "bf16" # "fp16" or "bf16"
+  optim_type: "adamw_8bit" # "adamw_hf" adamw_hf adamw
+  
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 2
+  n_epochs: 1
+
+  lr: 0.0001
+  weight_decay: 0.00
+  warmup_steps: 20
+  one_cycle_pct_start: 0.1
+
+
+
+  

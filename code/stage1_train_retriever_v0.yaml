@@ -1,0 +1,60 @@
+general:
+  seed: 42 
+  num_workers: 8
+  report_to: "none"
+  debug: False
+  debug_size: 0.1
+  uptokaggle: False
+
+data:
+  oof_csv: "oof_df.csv"
+  long_df_pq: "/long_df.pq"
+
+  full_train_data: False
+  n_splits: 5
+  fold_idx: 0
+
+  top_nums: 50
+  query_prefix: "<instruct>Given a math question and its incorrect answer, identify the underlying misconception that led to the mistake.\n<query>"
+  mis_prefix: ""
+
+  peek_dataset: True
+  
+model:
+  model_name: "Qwen2.5-32B-Instruct"
+  query_max_length: 512
+  mis_max_length: 64
+  
+  freeze_layers: 0
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.00
+  lora_bias: "none"
+  lora_target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+
+training:
+  amp: "bf16" # "fp16" or "bf16"
+  optim_type: "adamw"
+  
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 2
+  n_epochs: 1
+
+  temperature: 0.01
+  lr: 0.0001
+  weight_decay: 0.00
+  warmup_steps: 20
+  one_cycle_pct_start: 0.1
+
+
+
+  

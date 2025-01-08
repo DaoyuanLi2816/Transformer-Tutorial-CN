@@ -1,0 +1,40 @@
+
+========== 12161510 - train_retriever_v67.yaml ==========
+可用的 GPU 数量: 2
+polars==1.12.0
+torch==2.5.1+cu124
+transformers==4.42.4
+datasets==3.1.0
+sentence_transformers==3.2.1
+
+load long_df, explode_df from parquet file.
+len(misconception_mapping_df): 2587
+len(tra_long_df): 3493, len(val_long_df): 877, val rate: 20.1%
+
+QUERY:
+<instruct>Given a math question and its incorrect answer, identify the underlying misconception that led to the mistake.
+<query>### Construct
+Recognise a quadratic graph from its shape
+### Subject
+Quadratic Graphs-Others
+### Question
+Tom and Katie are discussing quadratic graphs Tom says this could be the graph of a quadratic function ![A graph showing a positive parabola in the shape of a u]() Katie says this could be the graph of a quadratic function ![A graph showing a negative parabola in the shape of an upside down u]() Who is correct?
+### Correct Answer
+Both Tom and Katie
+### Wrong Answer
+Only Katie
+<response>
+
+GT:
+Only recognises the negative form of a quadratic graph
+
+PASSAGES:
+['Only recognises the negative form of a quadratic graph', 'Only recognises the positive form of a quadratic graph', 'Does not recognise a quadratic graph', 'Confuses reciprocal and quadratic graphs', 'Confuses cubic and quadratic graphs', 'Confuses quadratic and exponential graphs', 'Believes that a positive x squared coefficient in a quadratic equation results in an n shaped graph', 'Believes a quadratic graph can be a straight line', 'Confuses the graph of a linear equation with a quadratic equation', 'When sketching graphs of factorised quadratics, does not see that the negative of the non variable terms in the brackets give the x intercepts or the roots of the graph.', 'Believes a reciprocal equation will have a quadratic graph', 'Finds the y intercept when asked to read the solution to a quadratic equation from a graph', 'Believes a cubic equation will have a quadratic graph', 'Solves for y=0 instead of given y-value when reading from a quadratic graph', 'Believes both solutions of a quadratic will have the same absolute value, even when the graph is not symmetrical about the y axis', 'confuses cubic and reciprocal graphs', 'Thinks the sign of solutions in a quadratic equation is always the same as the constant term', 'Does not recognise factorising a quadratic', 'Believes the solutions of a quadratic equation are the negative of the absolute values of the constants in the factorised form', 'Does not realise a quadratic must be in the form ax^2+bx+c=0 to be factorised', 'Misremembers the quadratic formula', 'Confuses displacement-time graphs with velocity-time graphs', 'Does not realise a quadratic must be in the form ax^2+bx+c=0 to find the values for the quadratic formula', 'Thinks a decreasing sequence cannot be quadratic', 'Does not understand the term quadratic', 'Confuses negative and positive coordinates when working with graphs in four quadrants', 'Does not understand that a line graph shows a relationship between 2 variables', 'Does not recognise the sin graph', 'Believes the solution of a quadratic is its turning point', 'Does not know that a single letter labels a vertex', 'Believes the solutions of a quadratic equation are the constants in the factorised form', 'Does not understand the link between the sign of the root and the sign in the bracket', 'Does not think a square root can be negative', 'Does not realise that all circles are similar', 'Believes linear graphs can be curved']
+scores.shape = (3493, 2587)
+scores.shape = (877, 2587)
+MAP@25: 0.4238
+R@1: 0.3017 | R@10: 0.6906 | R@25: 0.8126 | R@50: 0.8978 | R@100: 0.9391
+save adapeter model.
+MAP@25: 0.4238
+R@1: 0.3017 | R@10: 0.6906 | R@25: 0.8126 | R@50: 0.8978 | R@100: 0.9391
+Elapsed time: 435:26
