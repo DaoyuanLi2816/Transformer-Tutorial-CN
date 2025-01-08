@@ -4,7 +4,7 @@ This solution was developed for the [Eedi - Mining Misconceptions in Mathematics
 
 Our team achieved a [Silver Medal](https://www.kaggle.com/certification/competitions/distiller/eedi-mining-misconceptions-in-mathematics), with a public score of **0.54** and a private score of **0.50**. Our solution showcased the potential for using machine learning and natural language processing models, such as Qwen2.5-32B-Instruct combined with LoRA fine-tuning, to improve the efficiency and accuracy of misconception labeling in education, contributing to advancements in educational AI. 🥈
 
-![Daoyuan Li - Eedi - Mining Misconceptions in Mathematics](Daoyuan%20Li%20-%20Eedi%20-%20Mining%20Misconceptions%20in%20Mathematics.png)
+![Daoyuan Li - Eedi - Mining Misconceptions in Mathematics](./Certificate.png)
 
 ## Competition Overview
 
